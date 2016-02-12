@@ -1,0 +1,55 @@
+{
+ "testcases" : [
+    {
+      "id"       : "tc1",
+      "title"    : "resource verticle : create test case",
+      "verticle" : "org.gooru.nucleus.message.bus.resource",
+      "method"   : "POST",
+      "operation": "resource.create",
+      "userId"   : "5cb3a526-f191-419b-bddf-ff0541c01722",
+      "prefs"    : {"taxonomy_pref" : "CCSS"},
+      "headers"  : null,
+      "body"     : {
+                    "title": "t-1",
+                    "url": "www.t1.com",
+                    "narration": "n-1 narration",
+                    "description": "d-1 description",
+                    "content_format": "resource",
+                    "content_subformat": "webpage_resource",
+                    "is_copyright_owner": false,
+                    "visible_on_profile": false,
+                    "metadata": { }
+                   }
+    },    
+    {
+      "id"       : "tc2",
+      "title"    : "resource verticle : get test case",
+      "verticle" : "org.gooru.nucleus.message.bus.resource",
+      "method"   : "GET",
+      "operation": "resource.get",
+      "userId"   : "5cb3a526-f191-419b-bddf-ff0541c01722",
+      "prefs"    : {"taxonomy_pref" : "CCSS"},
+      "headers"  : {
+                    "resourceId"    : "3cb3a526-f191-419b-bddf-ff0541c01722"                    
+                   },
+      "body"     : null
+    },
+    {
+      "id"       : "tc3",
+      "title"    : "event verticle : resource create event",
+      "verticle" : "org.gooru.nucleus.message.bus.publisher.event",
+      "method"   : "GET",
+      "operation": "resource.get",
+      "userId"   : "5cb3a526-f191-419b-bddf-ff0541c01722",
+      "prefs"    : {"taxonomy_pref" : "CCSS"},
+      "headers"  : {
+      				"session.token" : "c2hlZWJhbkBnb29ydWxlYXJuaW5nLm9yZw==",
+      				"userId"   		: "5cb3a526-f191-419b-bddf-ff0541c01722",
+                    "resourceId"    : "3cb3a526-f191-419b-bddf-ff0541c01722"                    
+                   },
+      "body"	 : {
+                    "id"    : "3cb3a526-f191-419b-bddf-ff0541c01722"                 
+      			   }
+    }
+    ]
+}
