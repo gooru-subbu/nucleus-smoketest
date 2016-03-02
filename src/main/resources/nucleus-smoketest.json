@@ -7,6 +7,7 @@
       "method"   : "POST",
       "operation": "resource.create",
       "userId"   : "5cb3a526-f191-419b-bddf-ff0541c01722",
+      "sessionToken" : "NWNiM2E1MjYtZjE5MS00MTliLWJkZGYtZmYwNTQxYzAxNzIyOjIyIFNlcCAyMDE2",
       "prefs"    : {"taxonomy_pref" : "CCSS"},
       "headers"  : null,
       "body"     : {
@@ -28,6 +29,7 @@
       "method"   : "GET",
       "operation": "resource.get",
       "userId"   : "5cb3a526-f191-419b-bddf-ff0541c01722",
+      "sessionToken" : "NWNiM2E1MjYtZjE5MS00MTliLWJkZGYtZmYwNTQxYzAxNzIyOjIyIFNlcCAyMDE2",
       "prefs"    : {"taxonomy_pref" : "CCSS"},
       "headers"  : {
                     "resourceId"    : "3cb3a526-f191-419b-bddf-ff0541c01722"                    
@@ -35,21 +37,18 @@
       "body"     : null
     },
     {
-      "id"       : "tc3",
-      "title"    : "event verticle : resource create event",
-      "verticle" : "org.gooru.nucleus.message.bus.publisher.event",
-      "method"   : "GET",
-      "operation": "resource.get",
-      "userId"   : "5cb3a526-f191-419b-bddf-ff0541c01722",
-      "prefs"    : {"taxonomy_pref" : "CCSS"},
-      "headers"  : {
-      				"session.token" : "c2hlZWJhbkBnb29ydWxlYXJuaW5nLm9yZw==",
-      				"userId"   		: "5cb3a526-f191-419b-bddf-ff0541c01722",
-                    "resourceId"    : "3cb3a526-f191-419b-bddf-ff0541c01722"                    
-                   },
-      "body"	 : {
-                    "id"    : "3cb3a526-f191-419b-bddf-ff0541c01722"                 
-      			   }
+      "id"       	 : "tc3",
+      "title"    	 : "event verticle : resource create event",
+      "verticle"  	 : "org.gooru.nucleus.message.bus.publisher.event",
+      "method"   	 : "GET",
+      "operation"	 : "resource.get",
+      "userId"   	 : null,
+      "sessionToken" : "NWNiM2E1MjYtZjE5MS00MTliLWJkZGYtZmYwNTQxYzAxNzIyOjIyIFNlcCAyMDE2",
+      "prefs"    	 : {"taxonomy_pref" : "CCSS"},
+      "headers"  	 : null,
+      "body"	 	 : {
+                    	"id"    : "3cb3a526-f191-419b-bddf-ff0541c01722"                 
+      			   		}
     }
     ]
 }
